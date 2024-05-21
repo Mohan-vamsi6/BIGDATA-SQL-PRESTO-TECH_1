@@ -18,7 +18,7 @@ This project was developed as an assignment for the examination of **Big Data Ma
     1. [MQTT Dumper](#mqtt-dumper-1)
     1. [Kafka Stream](#kafkastream-2)
     1. [Presto](#presto-1)
-    1. [Jupyter Connection](#jupyter-1)
+    1. [Power-BI](#jupyter-1)
 1. [Results](#results)  
     1. [Line Chart](#linechart-1)
     1. [Bar Chart](#barchart-1)
@@ -73,7 +73,7 @@ MongoDB is an open source NoSQL database that uses a non-relational, document-or
 
 Presto (o PrestoDB) is a distributed SQL query engine that is open-source and optimized for high-speed analytic queries of data of any size. It supports relational and non-relational data sources, such as Amazon S3, Hadoop Distributed File System (HDFS), and MongoDB. With Presto, data can be queried directly without the need to transfer it to a separate analytics system.
 
-### [Jupyter Notebook](https://jupyter.org/)
+### [Power-BI](https://jupyter.org/)
 
 <p align="center">
   <img src="https://github.com/TBDMProject/SQL-PRESTO-TECH_1/blob/daniele-pelosi-images/jupyter_logo.png" alt="Alt text" title="Optional title" width="180" height="150">
@@ -766,26 +766,8 @@ While for stopping Presto simply use:
 bin/launcher stop
 ```  
 
-<h3 id="jupyter-1">Jupyter Connection</h3>
+<h3 id="jupyter-1">Power BI</h3>
 
-In order to establish a connection towards Presto it is possible to use the *pyhive* library by running the following:
-```python
-from pyhive import presto
-
-presto_conn = presto.connect(
-    host='000.000.000.000', #ip address of your virtual machine
-    port=8090, #port on which you installed presto
-    catalog='mongodb',
-    schema='yourschema' #specify the schema in which you are interested in
-)
-presto_cur = presto_conn.cursor()
-```  
-Then to execute a simple query:
-```bash
-presto_cur.execute("select * from yourtable")
-records=presto_cur.fetchall()
-``` 
-<p align="right">(<a href="#table-of-contents">back to top ⬆️</a>)</p>
 
 ## Results
 
@@ -819,7 +801,7 @@ As for the reaching of the objective, while the results achieved with both appro
 
 ## License
 
-SQL-TECH-PRESTO is available under the MIT [license](https://raw.githubusercontent.com/TBDMProject/SQL-PRESTO-TECH_1/main/LICENSE.md)
+SQL-TECH-PRESTO is available under the MIT [license]
 
 ```markdown
 Copyright (c) 2017 Wolox
@@ -846,6 +828,6 @@ THE SOFTWARE.
 
 | Contact | Mail |
 | --- | --- |
-| Avdil Mehmeti | avdil.mehmeti@studenti.unicam.it |
-| Daniele Pelosi | daniele.pelosi@studenti.unicam.it |
-| Kiran Jose Puthussery | kiran.puthussery@studenti.unicam.it |
+| Peddiboina Mohan Vamsi | mohanvams.peddiboina@studenti.unicam.it |
+
+
