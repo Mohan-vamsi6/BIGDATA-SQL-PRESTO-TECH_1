@@ -814,5 +814,6 @@ As for the reaching of the objective, while the results achieved with both appro
 | Contact | Mail |
 | --- | --- |
 | Peddiboina Mohan Vamsi | mohanvams.peddiboina@studenti.unicam.it |
+| Vaibhav Mathukiya | vaibhavjag.mathukiya@studenti.unicam.it |
 
 
