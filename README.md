@@ -89,7 +89,7 @@ Power BI is a business analytics tool by Microsoft that enables users to visuali
 * `Docker`
 * `Python 3`
 * `git clone https://github.com/massimocallisto/iot-simulator.git`
-* `git clone https://github.com/TBDMProject/SQL-PRESTO-TECH_1.git`
+* `git clone https://github.com/Mohan-vamsi6/BIGDATA-SQL-PRESTO-TECH_1.git`
 
 ## Installation and Configuration
 
