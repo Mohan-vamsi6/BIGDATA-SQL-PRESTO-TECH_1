@@ -37,7 +37,7 @@ To achieve the project's objective, two different approaches have been implement
 
 The overall system architecture is depicted in the figure below.
 
-![alt text](https://github.com/TBDMProject/SQL-PRESTO-TECH_1/blob/daniele-pelosi-images/Architecture.png?raw=true)
+![alt text](https://github.com/Mohan-vamsi6/BIGDATA-SQL-PRESTO-TECH_1/blob/images/images/main%20pic.png?raw=true)
 
 Let us examine how such tools were utilized within the project:
 
