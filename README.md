@@ -770,7 +770,7 @@ bin/launcher stop
 <h3 id="jupyter-1">Power BI</h3>
 
 Power BI is a business analytics tool by Microsoft that enables users to visualize data, share insights, and make data-driven decisions through interactive dashboards and reports.
-To setup a connection between presto and powerbi follow this <a href="https://insightsoftware.com/blog/how-to-connect-presto-to-power-bi/"> and complete setup 
+To setup a connection between presto and powerbi follow this <a href="https://insightsoftware.com/blog/how-to-connect-presto-to-power-bi/">click here <a> and complete setup 
 
 upload data from ODBC connect and transform the data 
 
