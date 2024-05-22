@@ -76,7 +76,7 @@ Presto (o PrestoDB) is a distributed SQL query engine that is open-source and op
 ### [Power-BI](https://jupyter.org/)
 
 <p align="center">
-  <img src="https://github.com/TBDMProject/SQL-PRESTO-TECH_1/blob/daniele-pelosi-images/jupyter_logo.png" alt="Alt text" title="Optional title" width="180" height="150">
+  <img src="https://github.com/Mohan-vamsi6/BIGDATA-SQL-PRESTO-TECH_1/blob/images/images/powerbi.png" alt="Alt text" title="Optional title" width="180" height="150">
 </p>
 
 The Jupyter Notebook App is a server-client application that allows editing and running notebook documents via a web browser. The Jupyter Notebook App can be executed on a local desktop requiring no internet access (as described in this document) or can be installed on a remote server and accessed through the internet.
@@ -778,21 +778,21 @@ In order to represent data through graphs Plotly has been used, obviously this l
 
 The following graph shows the temperature measured by a device over a set period of time:  
 <p align="center">
-  <img src="https://github.com/TBDMProject/SQL-PRESTO-TECH_1/blob/images/linechart.png?raw=true" alt="alt text" width="850"/>
+  <img src="https://github.com/Mohan-vamsi6/BIGDATA-SQL-PRESTO-TECH_1/blob/images/images/bargrapgh2.png?raw=true" alt="alt text" width="850"/>
 </p>  
 
 <h3 id="barchart-1">Bar Chart</h3>
 
 This bar chart shows the average of the temperatures measured by each device:  
 <p align="center">
-  <img src="https://github.com/TBDMProject/SQL-PRESTO-TECH_1/blob/images/barchart.png?raw=true" alt="alt text" width="850"/>
+  <img src="https://github.com/Mohan-vamsi6/BIGDATA-SQL-PRESTO-TECH_1/blob/images/images/bargraph.png?raw=true" alt="alt text" width="850"/>
 </p>  
 
 <h3 id="piechart-1">Pie Chart</h3>
 
 While this graph shows the distribution of the measurements based on the device type:
 <p align="center">
-  <img src="https://github.com/TBDMProject/SQL-PRESTO-TECH_1/blob/images/piechart.png?raw=true" alt="alt text" width="850"/>
+  <img src="https://github.com/Mohan-vamsi6/BIGDATA-SQL-PRESTO-TECH_1/blob/images/images/pie%20chat.png?raw=true" alt="alt text" width="850"/>
 </p>
 
 As for the reaching of the objective, while the results achieved with both approaches may appear similar or even identical, they are fundamentally different in nature. The primary differentiating factor lies in their performance characteristics, with the first approach exhibiting significantly slower processing speeds compared to the second approach. This performance discrepancy arises due to the unique capabilities of the second approach, which leverages the Kafka Streams API to enable real-time data analytics. In contrast, the first approach relies on a series of non-optimized operations to achieve its objectives.
