@@ -769,8 +769,10 @@ bin/launcher stop
 
 <h3 id="jupyter-1">Power BI</h3>
 
+Power BI is a business analytics tool by Microsoft that enables users to visualize data, share insights, and make data-driven decisions through interactive dashboards and reports.
+To setup a connection between presto and powerbi follow this <a href="https://insightsoftware.com/blog/how-to-connect-presto-to-power-bi/"> and complete setup 
 
-
+upload data from ODBC connect and transform the data 
 
 
 
@@ -805,30 +807,7 @@ As for the reaching of the objective, while the results achieved with both appro
 
 <p align="right">(<a href="#table-of-contents">back to top ⬆️</a>)</p>
 
-## License
 
-SQL-TECH-PRESTO is available under the MIT [license]
-
-```markdown
-Copyright (c) 2017 Wolox
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-```
 
 ## Contact Information
 
