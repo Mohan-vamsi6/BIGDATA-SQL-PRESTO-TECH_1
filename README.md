@@ -33,7 +33,7 @@ This project was developed as an assignment for the examination of **Big Data Ma
 The objective of the project is to establish a prototype tool for real-time data analysis. The data to be analyzed comes from an IoT simulator that has the task of simulating the generation of messages from real IoT devices, then is processed through the streaming platform Kafka.
 To achieve the project's objective, two different approaches have been implemented:
 - **First approach**: In this approach, the incoming data is processed by Kafka and directly stored in a NoSQL database. Subsequently, the data is extracted using Presto for further processing in a Jupyter Notebook. Since the data is still raw at this stage, it needs to be flattened before it can be used for analytics operations. To achieve this, a new collection is created in the NoSQL database, which is then combined with the original collection to enable analytics operations.
-- **Second approach**: This approach focuses more on real-time data analytics. The data flowing into Kafka is processed using the Kafka Stream API, making it analytics-ready. The processed data is then stored in the NoSQL database and can be analyzed using a Jupyter Notebook.
+- **Second approach**: This approach focuses more on real-time data analytics. The data flowing into Kafka is processed using the Kafka Stream API, making it analytics-ready. The processed data is then stored in the NoSQL database and can be analyzed using a Power BI.
 
 The overall system architecture is depicted in the figure below.
 
@@ -45,7 +45,7 @@ Let us examine how such tools were utilized within the project:
 - **Apache Kafka:** is used for real-time reading messages from the IoT Simulator and at the same time for storing these messages within a database, which as we can see is MongoDB.
 - **MongoDB:** non-relational document oriented database chosen for performing the storaging of messages streamed by kafka in real time
 - **Presto:** is the tool used to retreive data via standard SQL queries on a NoSQL database
-- **Jupyter:** used to create a notebook to produce analytics on collected data and generate graphs for better visualisation and interpretation of them
+- **Power BI:** used to create analytics on collected data and generate graphs for better visualisation and interpretation of them
 
 ## Technologies
 
@@ -79,7 +79,8 @@ Presto (o PrestoDB) is a distributed SQL query engine that is open-source and op
   <img src="https://github.com/Mohan-vamsi6/BIGDATA-SQL-PRESTO-TECH_1/blob/images/images/powerbi.png" alt="Alt text" title="Optional title" width="180" height="150">
 </p>
 
-The Jupyter Notebook App is a server-client application that allows editing and running notebook documents via a web browser. The Jupyter Notebook App can be executed on a local desktop requiring no internet access (as described in this document) or can be installed on a remote server and accessed through the internet.
+Power BI is a business analytics tool by Microsoft that enables users to visualize data, share insights, and make data-driven decisions through interactive dashboards and reports.
+
 
 ## Prerequisites
 * `Ubuntu 20.04 LTS (Focal Fossa)`
@@ -767,6 +768,11 @@ bin/launcher stop
 ```  
 
 <h3 id="jupyter-1">Power BI</h3>
+
+
+
+
+
 
 
 ## Results
