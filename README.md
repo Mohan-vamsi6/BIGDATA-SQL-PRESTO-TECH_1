@@ -32,8 +32,7 @@ This project was developed as an assignment for the examination of **Big Data Ma
 
 The objective of the project is to establish a prototype tool for real-time data analysis. The data to be analyzed comes from an IoT simulator that has the task of simulating the generation of messages from real IoT devices, then is processed through the streaming platform Kafka.
 To achieve the project's objective, two different approaches have been implemented:
-- **First approach**: In this approach, the incoming data is processed by Kafka and directly stored in a NoSQL database. Subsequently, the data is extracted using Presto for further processing in a Jupyter Notebook. Since the data is still raw at this stage, it needs to be flattened before it can be used for analytics operations. To achieve this, a new collection is created in the NoSQL database, which is then combined with the original collection to enable analytics operations.
-- **Second approach**: This approach focuses more on real-time data analytics. The data flowing into Kafka is processed using the Kafka Stream API, making it analytics-ready. The processed data is then stored in the NoSQL database and can be analyzed using a Power BI.
+- **approach**: This approach focuses more on real-time data analytics. The data flowing into Kafka is processed using the Kafka Stream API, making it analytics-ready. The processed data is then stored in the NoSQL database and can be analyzed using a Power BI.
 
 The overall system architecture is depicted in the figure below.
 
@@ -509,29 +508,6 @@ After confirming that the service is running as expected, enable the MongoDB ser
 sudo systemctl enable mongod
 ```
 
-Verify that the database is operational by connecting to the database server and executing a diagnostic command.
-
-```bash
-mongo --eval 'db.runCommand({ connectionStatus: 1 })'
-```
-
-`connectionStatus` will check and return the status of the database connection
-
-```bash
-
-Output
-MongoDB shell version v4.4.0
-connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("1dc7d67a-0af5-4394-b9c4-8a6db3ff7e64") }
-MongoDB server version: 4.4.0
-{
-	"authInfo" : {
-		"authenticatedUsers" : [ ],
-		"authenticatedUserRoles" : [ ]
-	},
-	"ok" : 1
-}
-```
 <p align="right">(<a href="#table-of-contents">back to top ⬆️</a>)</p>
 
 <h3 id="mongodb-sink-connector">MongoDB Sink Connector</h3>
@@ -546,8 +522,8 @@ Download source package from:
 Now open the file and **copy** the **.jar** file from the **/lib folder** and move it inside the folder of the virtual machine `/.../kafka/plugins/mongodb-connector` using a file manager ssh(es. CyberDuck).
 
 To run the connector, it is necessary to define three different configurations as JSON files to submit to the worker connector. 
-- One configuration is dedicated to the first approach solution [(See File)](https://github.com/TBDMProject/SQL-PRESTO-TECH_1/blob/main/MongoDBConnectors/FirstApproach/mongodb_connect.json). This connector allow to consume the original messages streamed by kafka and store them into a single collection called "iotsimulator"
-- The second approach needs two different configurations to run properly [(See files)](https://github.com/TBDMProject/SQL-PRESTO-TECH_1/tree/main/MongoDBConnectors/SecondApproach). In this case the connectors will read messages processed by the Kafka Stream App into two different topics. The mongodb1-connector will read messages from the "mqtt.main" topic and will store them into a collection called "general", while the mongodb2-connector will read messages under the topic "mqtt.measures" and store them inside the "measures" collection.
+
+- The approach needs two different configurations to run properly [(See files)](https://github.com/TBDMProject/SQL-PRESTO-TECH_1/tree/main/MongoDBConnectors/SecondApproach). In this case the connectors will read messages processed by the Kafka Stream App into two different topics. The mongodb1-connector will read messages from the "mqtt.main" topic and will store them into a collection called "general", while the mongodb2-connector will read messages under the topic "mqtt.measures" and store them inside the "measures" collection.
 
 In order to run these connectors submit to the worker for each configuration:
 
@@ -617,11 +593,7 @@ node.id=ffffffff-ffff-ffff-ffff-ffffffffffff
 node.data-dir=/home/presto/presto-data
 ```
 
-Change the node.id parameter with the uuid taken from MongoDB visible using the command:
-
-```bash
-mongo --eval 'db.runCommand({ connectionStatus: 1 })'
-```
+Change the node.id parameter with the uuid taken from  visible using the command: uuidgen
 
 **JVM Config**
 
